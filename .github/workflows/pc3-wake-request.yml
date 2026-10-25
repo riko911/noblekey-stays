@@ -1,0 +1,12 @@
+name: Wake PC3 (remote WOL request)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  register-wake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Record authorized PC3 wake request
+        run: echo "NobleKey PC3 wake request registered by GitHub account owner."
